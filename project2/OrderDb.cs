@@ -11,7 +11,7 @@ namespace project2
     {
         String eachPrice,max;
 
-        public void saveOrder(String itemCode,String size,String qty,String ePrice,String total,String orderNo)
+        public void saveOrder(String orderNo,String itemCode,String size,String qty,String ePrice,String total)
         {
             String date =DateTime.Now.ToString();
             MySqlDataReader rd;

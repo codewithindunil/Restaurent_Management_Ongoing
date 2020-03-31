@@ -12,12 +12,12 @@ namespace project2
 {
     public partial class Order : Form
     {
-        private String itemCode;
-        public String size ;
-        public String qty ;
-        public String ePrice ;
-        public String total ;
-        String orderNo;
+        private String itemCode="";
+        public String size = "";
+        public String qty = "";
+        public String ePrice = "";
+        public String total = "";
+        String orderNo = "";
         public Order(String itemCode, String orderNo)
         {
            
@@ -49,7 +49,10 @@ namespace project2
             size = txtSize.SelectedItem.ToString();
             Console.WriteLine(size);
             ePrice=new OrderDb().searchItem(itemCode, size);
+            Console.WriteLine("received"+size);
             total = (int.Parse(qty) * int.Parse(ePrice)).ToString();
+            Console.WriteLine("received" + total);
+
             new OrderDb().saveOrder(orderNo,itemCode, size, qty, ePrice, total);
             //Console.WriteLine(ePrice);
         }

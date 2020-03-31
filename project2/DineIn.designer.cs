@@ -54,7 +54,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(303, 607);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // bunifuImageButton1
             // 
@@ -93,7 +92,6 @@
             this.bunifuThinButton25.Size = new System.Drawing.Size(284, 58);
             this.bunifuThinButton25.TabIndex = 4;
             this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton25.Click += new System.EventHandler(this.bunifuThinButton25_Click);
             // 
             // bunifuThinButton24
             // 
@@ -170,7 +168,6 @@
             this.bunifuThinButton22.Size = new System.Drawing.Size(284, 58);
             this.bunifuThinButton22.TabIndex = 1;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // bunifuThinButton21
             // 
@@ -196,15 +193,13 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(284, 58);
             this.bunifuThinButton21.TabIndex = 0;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(309, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(765, 607);
+            this.panel2.Size = new System.Drawing.Size(763, 607);
             this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // DineIn
             // 

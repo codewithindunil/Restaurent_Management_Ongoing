@@ -13,15 +13,16 @@ namespace project2
     public partial class frmDesserts : Form
     {
         String itemCode;
-        String size;
-        String qty;
-        String ePrice;
-        String total;
-        String orderNo;
+        //String size;
+        //String qty;
+        //String ePrice;
+        //String total;
+        String orderNo="";
         public frmDesserts(String orderNo)
         {
-            this.orderNo = orderNo;
             InitializeComponent();
+            this.orderNo = orderNo;
+
         }
 
         private void bunifuThinButton27_Click(object sender, EventArgs e)

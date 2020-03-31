@@ -13,18 +13,28 @@ namespace project2
     public partial class DineIn : Form
     {
         public String orderNo;
-        public DineIn()
+        String tbleNo;
+        
+        public DineIn(String tbNo)
         {
             InitializeComponent();
+            this.tbleNo = tbNo;
+            Console.WriteLine("tble np "+tbleNo);
+        }
+        public DineIn()
+        {
+            
+
         }
 
         private void bunifuThinButton24_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            frmDesserts menu = new frmDesserts(orderNo);
+            frmDesserts menu = new frmDesserts(orderNo,tbleNo);
             menu.TopLevel = false; ;
             panel2.Controls.Add(menu);
             menu.Show();
+            Console.WriteLine(tbleNo);
         }
 
         private void DineIn_Load(object sender, EventArgs e)
@@ -33,6 +43,13 @@ namespace project2
             int max = int.Parse(x) + 1;
             this.orderNo = max.ToString();
             Console.WriteLine(orderNo);
+            getTableNo();
+            
+        }
+
+        private void getTableNo()
+        {
+            new frmGetTableNo().Show();
         }
     }
 }

@@ -38,14 +38,26 @@
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>C:\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
+    <Reference Include="FireSharp, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FireSharp.1.1.0\lib\net45\FireSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="FireSharp.Serialization.JsonNet, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FireSharp.Serialization.JsonNet.1.1.0\lib\net45\FireSharp.Serialization.JsonNet.dll</HintPath>
+    </Reference>
     <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.19\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
       <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=104.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.104.4.0\lib\net4\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel" />
@@ -87,6 +99,7 @@
     <Compile Include="Customer interface2.Designer.cs">
       <DependentUpon>Customer interface2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data.cs" />
     <Compile Include="Dessert.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -116,6 +129,12 @@
     </Compile>
     <Compile Include="frmDesserts.Designer.cs">
       <DependentUpon>frmDesserts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGetTableNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGetTableNo.Designer.cs">
+      <DependentUpon>frmGetTableNo.cs</DependentUpon>
     </Compile>
     <Compile Include="ListPhone.cs">
       <SubType>Form</SubType>
@@ -173,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDesserts.resx">
       <DependentUpon>frmDesserts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGetTableNo.resx">
+      <DependentUpon>frmGetTableNo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListPhone.resx">
       <DependentUpon>ListPhone.cs</DependentUpon>

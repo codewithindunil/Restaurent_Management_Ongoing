@@ -18,10 +18,12 @@ namespace project2
         //String ePrice;
         //String total;
         String orderNo="";
-        public frmDesserts(String orderNo)
+        String tbleNo = "";
+        public frmDesserts(String orderNo,String tbleNo)
         {
             InitializeComponent();
             this.orderNo = orderNo;
+            this.tbleNo = tbleNo;
 
         }
 
@@ -29,7 +31,8 @@ namespace project2
         {
             itemCode = "1";
             //ePrice = "100";
-            new Order(itemCode, orderNo).Show();
+            Console.WriteLine("dessert tbl no " + tbleNo);
+            new Order(itemCode, orderNo, tbleNo).Show();
 
 
             //new Order(this).Show();

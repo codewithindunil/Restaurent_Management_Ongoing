@@ -3,16 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FireSharp.Config;
+using FireSharp.Interfaces;
 using MySql.Data.MySqlClient;
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+using System.IO;
 
 namespace project2
 {
+    
     class OrderDb
     {
-        String eachPrice,max;
-
-        public void saveOrder(String orderNo,String itemCode,String size,String qty,String ePrice,String total)
+        
+        String eachPrice,max,maxId;
+        IFirebaseClient client;
+        IFirebaseConfig config = new FirebaseConfig
         {
+            AuthSecret = "lJ00CGCubk8WK0tl0zD2ZUULDmVkUfVA1fXqqs0V",
+            BasePath = "https://c-sharp-2a4aa.firebaseio.com/"
+        };
+
+        public void saveOrder(String orderNo,String itemCode,String size,String qty,String ePrice,String total,String tbleNo)
+        {
+             String item = getMaxId();
+            
+            Console.WriteLine("saceOrder Called itemNo " + item);
             String date =DateTime.Now.ToString();
             MySqlDataReader rd;
 
@@ -31,7 +48,7 @@ namespace project2
                 conn.Open();
                 rd = command.ExecuteReader();
 
-
+                sendToFirebase(tbleNo,itemCode,qty,orderNo,size,item);
                 Console.WriteLine("order saved");
                 conn.Close();
             }
@@ -107,6 +124,52 @@ namespace project2
 
             return max;
         }
+        public async void sendToFirebase(String tblNo,String itemCode,String qty,String orderNo,String size,String item)
+        {
+            //sendToFirebase(tbleNo, itemCode, qty, orderNo, size);
 
+            
+            Console.WriteLine("in firebase item"+item);
+            Console.WriteLine("in firbase tble no "+tblNo);
+            IFirebaseClient  client = new FireSharp.FirebaseClient(config);
+            var data = new Data
+            {
+                tblNo = tblNo,
+                itemCode = itemCode,
+                qty = qty,
+                status = "pending",
+                size=size
+            };
+            SetResponse response = await client.SetTaskAsync("Orders/"+ tblNo+"/" + item , data);
+            Data result = response.ResultAs<Data>();
+        }
+
+
+        public  String getMaxId()
+        {
+            MySqlDataReader rd;
+
+            MySqlConnection conn;
+            string connetionString = null;
+            connetionString = "server=localhost;database=restauretdb;uid=root;pwd=;";
+            conn = new MySqlConnection(connetionString);
+            String query;
+            conn.Open();
+            try
+            {
+                MySqlCommand command = new MySqlCommand("SELECT MAX(id) from orders_tb", conn);
+                maxId = command.ExecuteScalar().ToString();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return maxId;
+        }
     }
 }

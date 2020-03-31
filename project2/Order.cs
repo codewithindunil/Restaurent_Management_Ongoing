@@ -18,12 +18,14 @@ namespace project2
         public String ePrice = "";
         public String total = "";
         String orderNo = "";
-        public Order(String itemCode, String orderNo)
+        String tbleNo = "";
+        public Order(String itemCode, String orderNo,String tbleNo)
         {
            
             InitializeComponent();
             this.itemCode = itemCode;
             this.orderNo = orderNo;
+            this.tbleNo = tbleNo;
            
         }
        
@@ -52,8 +54,8 @@ namespace project2
             Console.WriteLine("received"+size);
             total = (int.Parse(qty) * int.Parse(ePrice)).ToString();
             Console.WriteLine("received" + total);
-
-            new OrderDb().saveOrder(orderNo,itemCode, size, qty, ePrice, total);
+            Console.WriteLine("in order tbNo " + tbleNo);
+            new OrderDb().saveOrder(orderNo,itemCode, size, qty, ePrice, total, tbleNo);
             //Console.WriteLine(ePrice);
         }
     }

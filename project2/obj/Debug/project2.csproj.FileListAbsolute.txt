@@ -50,3 +50,10 @@ D:\New folder\project-master\project2\bin\Debug\Google.Protobuf.xml
 D:\New folder\project-master\project2\bin\Debug\MySql.Data.xml
 D:\New folder\project-master\project2\bin\Debug\Renci.SshNet.xml
 D:\New folder\project-master\project2\obj\Debug\project2.frmDesserts.resources
+D:\New folder\project-master\project2\obj\Debug\project2.frmGetTableNo.resources
+D:\New folder\project-master\project2\bin\Debug\FireSharp.dll
+D:\New folder\project-master\project2\bin\Debug\FireSharp.Serialization.JsonNet.dll
+D:\New folder\project-master\project2\bin\Debug\Newtonsoft.Json.dll
+D:\New folder\project-master\project2\bin\Debug\RestSharp.dll
+D:\New folder\project-master\project2\bin\Debug\Newtonsoft.Json.xml
+D:\New folder\project-master\project2\bin\Debug\RestSharp.xml

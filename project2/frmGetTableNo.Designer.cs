@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGetTableNo));
             this.btnSubit = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtTable = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.SuspendLayout();
             // 
             // btnSubit
@@ -78,6 +80,11 @@
             this.txtTable.TabIndex = 1;
             this.txtTable.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // frmGetTableNo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -97,5 +104,6 @@
 
         private Bunifu.Framework.UI.BunifuThinButton2 btnSubit;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtTable;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

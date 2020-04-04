@@ -132,6 +132,7 @@ namespace project2
             Console.WriteLine("in firebase item"+item);
             Console.WriteLine("in firbase tble no "+tblNo);
             IFirebaseClient  client = new FireSharp.FirebaseClient(config);
+            
             var data = new Data
             {
                 tblNo = tblNo,
@@ -140,8 +141,9 @@ namespace project2
                 status = "pending",
                 size=size
             };
-            SetResponse response = await client.SetTaskAsync("Orders/"+ tblNo+"/" + item , data);
+            SetResponse response = await client.SetTaskAsync("Orders/" + item , data);
             Data result = response.ResultAs<Data>();
+            updatePending(item,tblNo);
         }
 
 
@@ -170,6 +172,20 @@ namespace project2
             }
 
             return maxId;
+        }
+        public async void updatePending(String orderNo,String tbleNo)
+        {
+            Console.WriteLine("pending called");
+            IFirebaseClient client = new FireSharp.FirebaseClient(config);
+
+            var DataPending = new DataPending
+            {
+                orderNo = orderNo,
+                //tbleNo = tbleNo
+                
+            };
+            SetResponse response = await client.SetTaskAsync("pending/"+orderNo, DataPending);
+            DataPending result = response.ResultAs<DataPending>();
         }
     }
 }

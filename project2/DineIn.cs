@@ -35,6 +35,7 @@ namespace project2
             panel2.Controls.Add(menu);
             menu.Show();
             Console.WriteLine(tbleNo);
+            new frmKitchen().addItem("", "", "");
         }
 
         private void DineIn_Load(object sender, EventArgs e)

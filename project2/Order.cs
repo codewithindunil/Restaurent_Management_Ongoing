@@ -12,6 +12,7 @@ namespace project2
 {
     public partial class Order : Form
     {
+        frmKitchen kit = new frmKitchen();
         private String itemCode="";
         public String size = "";
         public String qty = "";
@@ -35,6 +36,8 @@ namespace project2
             
         }
 
+
+
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -57,6 +60,13 @@ namespace project2
             Console.WriteLine("in order tbNo " + tbleNo);
             new OrderDb().saveOrder(orderNo,itemCode, size, qty, ePrice, total, tbleNo);
             //Console.WriteLine(ePrice);
+            sendToKitchen(itemCode,size,qty);
+        }
+
+
+        private void sendToKitchen(String name,String size,String qty)
+        {
+            kit.addItem(name,size,qty);
         }
     }
 }

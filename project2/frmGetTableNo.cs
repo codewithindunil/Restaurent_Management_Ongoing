@@ -20,6 +20,8 @@ namespace project2
         private void btnSubit_Click(object sender, EventArgs e)
         {
             new DineIn(txtTable.Text).Show();
+            //new frmKitchen().Show();
+            
             this.Hide();
         }
     }

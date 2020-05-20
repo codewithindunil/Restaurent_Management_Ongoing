@@ -16,7 +16,7 @@ namespace project2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmGetTableNo());
+            Application.Run(new DineIn("1"));
         }
     }
 }

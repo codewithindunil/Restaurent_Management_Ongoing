@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Food2));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -77,6 +78,7 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -751,6 +753,11 @@
             this.label15.Size = new System.Drawing.Size(0, 13);
             this.label15.TabIndex = 1;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 10;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // Food2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -760,6 +767,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Food2";
             this.Size = new System.Drawing.Size(772, 607);
+            this.Load += new System.EventHandler(this.Food2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -853,5 +861,6 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

@@ -12,9 +12,16 @@ namespace project2
 {
     public partial class Buns : UserControl
     {
-        public Buns()
+
+        String itemCode;
+        String orderNo = "";
+        String tbleNo = "";
+        public Buns(String orderNo, String tbleNo)
         {
             InitializeComponent();
+            this.orderNo = orderNo;
+            this.tbleNo = tbleNo;
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -85,6 +92,11 @@ namespace project2
         private void bunifuThinButton29_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void Buns_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

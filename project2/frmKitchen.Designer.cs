@@ -70,6 +70,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmKitchen";
             this.Text = "frmKitchen";
+            this.Load += new System.EventHandler(this.frmKitchen_Load);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 

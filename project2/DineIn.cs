@@ -29,13 +29,14 @@ namespace project2
 
         private void bunifuThinButton24_Click(object sender, EventArgs e)
         {
+            frmDesserts menu = new frmDesserts(orderNo, tbleNo);
+
             panel2.Controls.Clear();
-            frmDesserts menu = new frmDesserts(orderNo,tbleNo);
             menu.TopLevel = false; ;
             panel2.Controls.Add(menu);
             menu.Show();
-            Console.WriteLine(tbleNo);
-            new frmKitchen().addItem("", "", "");
+            //Console.WriteLine(tbleNo);
+            //new frmKitchen().addItem("", "", "");
         }
 
         private void DineIn_Load(object sender, EventArgs e)
@@ -51,6 +52,46 @@ namespace project2
         private void getTableNo()
         {
             new frmGetTableNo().Show();
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            Food2 item = new Food2(orderNo, tbleNo);
+            panel2.Controls.Clear();
+            item.Top = 20;
+            item.Left = 20;
+            panel2.Controls.Add(item);
+            
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            Buns item = new Buns(orderNo, tbleNo);
+            panel2.Controls.Clear();
+            item.Top = 20;
+            item.Left = 20;
+            panel2.Controls.Add(item);
+            
+        }
+
+        private void bunifuThinButton25_Click(object sender, EventArgs e)
+        {
+            Sweets item = new Sweets(orderNo, tbleNo);
+            panel2.Controls.Clear();
+            item.Top = 20;
+            item.Left = 20;
+            panel2.Controls.Add(item);
+            
+        }
+
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+            Drinks item = new Drinks(orderNo, tbleNo);
+            panel2.Controls.Clear();
+            item.Top = 20;
+            item.Left = 20;
+            panel2.Controls.Add(item);
+           
         }
     }
 }

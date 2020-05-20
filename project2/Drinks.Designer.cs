@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Drinks));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -68,6 +69,7 @@
             this.bunifuThinButton29 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -646,6 +648,11 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "Falooda";
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 10;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // Drinks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -655,6 +662,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Drinks";
             this.Size = new System.Drawing.Size(772, 607);
+            this.Load += new System.EventHandler(this.Drinks_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -730,5 +738,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton29;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label9;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

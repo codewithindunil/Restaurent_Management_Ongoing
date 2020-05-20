@@ -36,5 +36,10 @@ namespace project2
         {
             addItem("ffw", "ewfwe", "ewfew");
         }
+
+        private void frmKitchen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

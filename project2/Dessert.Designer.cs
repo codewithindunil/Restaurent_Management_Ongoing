@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dessert));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -43,6 +44,10 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -56,10 +61,6 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.bunifuThinButton28 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -68,6 +69,7 @@
             this.bunifuThinButton29 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -76,6 +78,8 @@
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel4.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel6.SuspendLayout();
@@ -83,8 +87,6 @@
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel12.SuspendLayout();
@@ -99,7 +101,7 @@
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Location = new System.Drawing.Point(17, 14);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(222, 577);
+            this.panel1.Size = new System.Drawing.Size(222, 591);
             this.panel1.TabIndex = 1;
             // 
             // panel3
@@ -110,7 +112,7 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(14, 406);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(193, 152);
+            this.panel3.Size = new System.Drawing.Size(193, 177);
             this.panel3.TabIndex = 8;
             // 
             // bunifuThinButton22
@@ -168,7 +170,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(14, 211);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(193, 152);
+            this.panel2.Size = new System.Drawing.Size(193, 177);
             this.panel2.TabIndex = 8;
             // 
             // bunifuThinButton21
@@ -212,7 +214,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(1, 1);
+            this.label1.Location = new System.Drawing.Point(12, 1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 18);
             this.label1.TabIndex = 0;
@@ -226,7 +228,7 @@
             this.panel8.Controls.Add(this.label7);
             this.panel8.Location = new System.Drawing.Point(14, 15);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(193, 152);
+            this.panel8.Size = new System.Drawing.Size(193, 177);
             this.panel8.TabIndex = 7;
             // 
             // bunifuThinButton27
@@ -270,7 +272,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label7.Location = new System.Drawing.Point(3, 1);
+            this.label7.Location = new System.Drawing.Point(14, 1);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(169, 18);
             this.label7.TabIndex = 0;
@@ -284,8 +286,66 @@
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Location = new System.Drawing.Point(276, 14);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(222, 577);
+            this.panel4.Size = new System.Drawing.Size(222, 591);
             this.panel4.TabIndex = 9;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel10.Controls.Add(this.bunifuThinButton26);
+            this.panel10.Controls.Add(this.pictureBox6);
+            this.panel10.Controls.Add(this.label6);
+            this.panel10.Location = new System.Drawing.Point(14, 15);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(193, 177);
+            this.panel10.TabIndex = 8;
+            // 
+            // bunifuThinButton26
+            // 
+            this.bunifuThinButton26.ActiveBorderThickness = 1;
+            this.bunifuThinButton26.ActiveCornerRadius = 20;
+            this.bunifuThinButton26.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton26.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton26.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.bunifuThinButton26.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton26.BackgroundImage")));
+            this.bunifuThinButton26.ButtonText = "Order";
+            this.bunifuThinButton26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton26.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton26.IdleBorderThickness = 1;
+            this.bunifuThinButton26.IdleCornerRadius = 20;
+            this.bunifuThinButton26.IdleFillColor = System.Drawing.Color.MistyRose;
+            this.bunifuThinButton26.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton26.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton26.Location = new System.Drawing.Point(4, 120);
+            this.bunifuThinButton26.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuThinButton26.Name = "bunifuThinButton26";
+            this.bunifuThinButton26.Size = new System.Drawing.Size(90, 28);
+            this.bunifuThinButton26.TabIndex = 1;
+            this.bunifuThinButton26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton26.Click += new System.EventHandler(this.bunifuThinButton26_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(32, 20);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(113, 100);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label6.Location = new System.Drawing.Point(14, 1);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(117, 18);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Fruit Milk Jelly";
             // 
             // panel5
             // 
@@ -295,7 +355,7 @@
             this.panel5.Controls.Add(this.label3);
             this.panel5.Location = new System.Drawing.Point(14, 406);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(193, 152);
+            this.panel5.Size = new System.Drawing.Size(193, 177);
             this.panel5.TabIndex = 8;
             // 
             // bunifuThinButton23
@@ -353,7 +413,7 @@
             this.panel6.Controls.Add(this.label4);
             this.panel6.Location = new System.Drawing.Point(14, 211);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(193, 152);
+            this.panel6.Size = new System.Drawing.Size(193, 177);
             this.panel6.TabIndex = 8;
             // 
             // bunifuThinButton24
@@ -397,7 +457,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(3, 1);
+            this.label4.Location = new System.Drawing.Point(14, 1);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 18);
             this.label4.TabIndex = 0;
@@ -411,7 +471,7 @@
             this.panel7.Controls.Add(this.label5);
             this.panel7.Location = new System.Drawing.Point(14, 406);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(193, 152);
+            this.panel7.Size = new System.Drawing.Size(193, 177);
             this.panel7.TabIndex = 7;
             // 
             // bunifuThinButton25
@@ -469,66 +529,8 @@
             this.panel9.Controls.Add(this.panel7);
             this.panel9.Location = new System.Drawing.Point(535, 14);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(222, 577);
+            this.panel9.Size = new System.Drawing.Size(222, 591);
             this.panel9.TabIndex = 9;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel10.Controls.Add(this.bunifuThinButton26);
-            this.panel10.Controls.Add(this.pictureBox6);
-            this.panel10.Controls.Add(this.label6);
-            this.panel10.Location = new System.Drawing.Point(14, 15);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(193, 152);
-            this.panel10.TabIndex = 8;
-            // 
-            // bunifuThinButton26
-            // 
-            this.bunifuThinButton26.ActiveBorderThickness = 1;
-            this.bunifuThinButton26.ActiveCornerRadius = 20;
-            this.bunifuThinButton26.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton26.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton26.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton26.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton26.BackgroundImage")));
-            this.bunifuThinButton26.ButtonText = "Order";
-            this.bunifuThinButton26.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton26.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton26.IdleBorderThickness = 1;
-            this.bunifuThinButton26.IdleCornerRadius = 20;
-            this.bunifuThinButton26.IdleFillColor = System.Drawing.Color.MistyRose;
-            this.bunifuThinButton26.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton26.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton26.Location = new System.Drawing.Point(4, 120);
-            this.bunifuThinButton26.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton26.Name = "bunifuThinButton26";
-            this.bunifuThinButton26.Size = new System.Drawing.Size(90, 28);
-            this.bunifuThinButton26.TabIndex = 1;
-            this.bunifuThinButton26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton26.Click += new System.EventHandler(this.bunifuThinButton26_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(32, 20);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(113, 100);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label6.Location = new System.Drawing.Point(3, 1);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 18);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Fruit Milk Jelly";
             // 
             // panel11
             // 
@@ -538,7 +540,7 @@
             this.panel11.Controls.Add(this.label8);
             this.panel11.Location = new System.Drawing.Point(14, 211);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(193, 152);
+            this.panel11.Size = new System.Drawing.Size(193, 177);
             this.panel11.TabIndex = 8;
             // 
             // bunifuThinButton28
@@ -582,7 +584,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label8.Location = new System.Drawing.Point(3, 1);
+            this.label8.Location = new System.Drawing.Point(14, 1);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(108, 18);
             this.label8.TabIndex = 0;
@@ -596,7 +598,7 @@
             this.panel12.Controls.Add(this.label9);
             this.panel12.Location = new System.Drawing.Point(14, 15);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(193, 152);
+            this.panel12.Size = new System.Drawing.Size(193, 177);
             this.panel12.TabIndex = 7;
             // 
             // bunifuThinButton29
@@ -640,11 +642,16 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label9.Location = new System.Drawing.Point(3, 1);
+            this.label9.Location = new System.Drawing.Point(14, 1);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(162, 18);
             this.label9.TabIndex = 0;
             this.label9.Text = "Creame Yogurt Jello";
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 10;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // Dessert
             // 
@@ -654,7 +661,8 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Name = "Dessert";
-            this.Size = new System.Drawing.Size(772, 607);
+            this.Size = new System.Drawing.Size(778, 625);
+            this.Load += new System.EventHandler(this.Dessert_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -666,6 +674,9 @@
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel4.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -676,9 +687,6 @@
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel9.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -730,5 +738,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton29;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label9;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

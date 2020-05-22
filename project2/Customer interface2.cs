@@ -24,14 +24,14 @@ namespace project2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Phone P = new Phone();
+            frmGetTableNo P = new frmGetTableNo();
             P.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            TakeawayPhone P = new TakeawayPhone();
-            P.Show();
+          
         }
 
         private void button3_Click(object sender, EventArgs e)

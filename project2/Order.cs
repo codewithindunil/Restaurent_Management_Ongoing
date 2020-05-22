@@ -58,9 +58,11 @@ namespace project2
             total = (int.Parse(qty) * int.Parse(ePrice)).ToString();
             Console.WriteLine("received" + total);
             Console.WriteLine("in order tbNo " + tbleNo);
-            new OrderDb().saveOrder(orderNo,itemCode, size, qty, ePrice, total, tbleNo);
+             new OrderDb().saveOrder(orderNo,itemCode, size, qty, ePrice, total, tbleNo);
             //Console.WriteLine(ePrice);
+            
             sendToKitchen(itemCode,size,qty);
+            this.Hide();
         }
 
 

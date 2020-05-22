@@ -96,10 +96,7 @@ namespace project2
 
         private void Drinks_Load(object sender, EventArgs e)
         {
-            itemCode = "1";
-            //ePrice = "100";
-            Console.WriteLine("dessert tbl no " + tbleNo);
-            new Order(itemCode, orderNo, tbleNo).Show();
+          
         }
     }
 }

@@ -59,3 +59,5 @@ D:\New folder\project-master\project2\bin\Debug\Newtonsoft.Json.xml
 D:\New folder\project-master\project2\bin\Debug\RestSharp.xml
 D:\New folder\project-master\project2\obj\Debug\project2.frmKitchen.resources
 D:\New folder\project-master\project2\obj\Debug\project2.KitchenOrders.resources
+D:\New folder\project-master\project2\obj\Debug\project2.BillItem.resources
+D:\New folder\project-master\project2\obj\Debug\project2.frmBill.resources

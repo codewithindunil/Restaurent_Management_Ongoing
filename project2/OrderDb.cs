@@ -28,7 +28,7 @@ namespace project2
         public void saveOrder(String orderNo,String itemCode,String size,String qty,String ePrice,String total,String tbleNo)
         {
              String item = getMaxId();
-            
+            bool status=false;
             Console.WriteLine("saceOrder Called itemNo " + item);
             String date =DateTime.Now.ToString();
             MySqlDataReader rd;
@@ -59,6 +59,7 @@ namespace project2
 
                 conn.Dispose();
             }
+
 
         }
         public String searchItem(String itemCode,String size)
@@ -106,11 +107,11 @@ namespace project2
             string connetionString = null;
             connetionString = "server=localhost;database=restauretdb;uid=root;pwd=;";
             conn = new MySqlConnection(connetionString);
-            String query;
+            String query= "SELECT MAX(orderNo) from orders_tb";
             conn.Open();
             try
             {
-                MySqlCommand command = new MySqlCommand("SELECT MAX(orderNo) from orders_tb", conn);
+                MySqlCommand command = new MySqlCommand(query, conn);
                 max = command.ExecuteScalar().ToString();
             }
             catch(Exception e)

@@ -29,10 +29,10 @@ namespace project2
 
         private void bunifuThinButton24_Click(object sender, EventArgs e)
         {
-            frmDesserts menu = new frmDesserts(orderNo, tbleNo);
+            Dessert menu = new Dessert(orderNo, tbleNo);
 
             panel2.Controls.Clear();
-            menu.TopLevel = false; ;
+            //menu.TopLevel = false; ;
             panel2.Controls.Add(menu);
             menu.Show();
             //Console.WriteLine(tbleNo);
@@ -41,11 +41,12 @@ namespace project2
 
         private void DineIn_Load(object sender, EventArgs e)
         {
+            //getTableNo();
             String x = new OrderDb().searchNextOrderNo();
             int max = int.Parse(x) + 1;
             this.orderNo = max.ToString();
             Console.WriteLine(orderNo);
-            getTableNo();
+            
             
         }
 
@@ -92,6 +93,11 @@ namespace project2
             item.Left = 20;
             panel2.Controls.Add(item);
            
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            new frmBill(orderNo).Show();
         }
     }
 }
